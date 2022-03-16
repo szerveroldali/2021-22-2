@@ -131,7 +131,7 @@ Készítsd el a felületet, ahol új űrlapot lehet felvenni! Az első részben 
 - mikor jár le
   - tipp: használhatod a [datetime-local](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/datetime-local) mezőtípust a lejárathoz
 
-Ezt követően az űrlaphoz tartozó kérdéseket kell felvenni. Egy űrlaphoz N db kérdés tartozhat, és egy feleletválasztós kérdéshez is N db válaszlehetőséget lehet rendelni. Ez azt jelenti, hogy nem tudsz hozzá megadni egy statikus form-ot, hanem dinamikusan kell kezelned a mezőket. Ennek többféle megközelítése is lehetséges, [ide kattintva](totadavid.hu/files/dinamikus_form_pelda.zip) adunk egy nagyon leegyszerűsített példát, amiből ki tudsz indulni.
+Ezt követően az űrlaphoz tartozó kérdéseket kell felvenni. Egy űrlaphoz N db kérdés tartozhat, és egy feleletválasztós kérdéshez is N db válaszlehetőséget lehet rendelni. Ez azt jelenti, hogy nem tudsz hozzá megadni egy statikus form-ot, hanem dinamikusan kell kezelned a mezőket. Ennek többféle megközelítése is lehetséges, [ide kattintva](https://totadavid.hu/files/dinamikus_form_pelda.zip) adunk egy nagyon leegyszerűsített példát, amiből ki tudsz indulni.
 
 Az űrlap létrehozását követően irányítsd át a felhasználót egy oldalra, ahol jelenítsd meg neki a létrejött űrlap linkjét, és tudasd vele, hogy azt kell megosztania másokkal. Ha valaki majd megnyitja azt a linket, akkor ott fogja tudni kitölteni a kérdőívet.
 
