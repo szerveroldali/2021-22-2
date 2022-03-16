@@ -27,7 +27,7 @@
 
 - **A beadandót a kijelölt határidőn belül be kell adni a Canvas felületen!**
   > :warning: **FONTOS! A Canvas beadási felülete a határidő lejártakor automatikusan LEZÁR! Ez azt jelenti, hogy a határidő lejárta után NINCS lehetőség beadásra, már 0:00-tól sem! Haladékra csak kivételes és igazolt esetben van lehetőség a gyakorlatvezetőd egyéni elbírálásától függően! Ha valaki kicsúszik a határidőből, akkor nem teljesítette beadandót, ebből kifolyólag pedig a tárgyat sem, hiszen a beadandó a tárgy teljesítésének egyik alapkövetelménye!**
-- Kötelező a kezdőcsomag használata! A kezdőcsomag [INNEN](https://github.com/szerveroldali/laravel_kezdocsomag_2021-22-2) tölthető le.
+- Kötelező a kezdőcsomag használata! A kezdőcsomag [INNEN](https://github.com/szerveroldali/laravel_kezdocsomag_2021-22-2/archive/refs/heads/main.zip) tölthető le.
 - Tilos további Composer-es csomagokat telepíteni a UI csomagokon kívül! A feladat kényelmesen megoldható azokkal az alap csomagokkal, amiket a kezdőcsomag is biztosít. NPM-es csomagok telepíthetők, frontend szabadon választható.
 - Az adattároláshoz SQLite adatbázist kell használni! A beadott alkalmazás SQLite kapcsolatra legyen beállítva (ez a kezdőcsomag alapértelmezett viselkedése)!
 - Az alkalmazás a beadott zip-ből kicsomagolva az operációs rendszernek megfelelő `init.bat` / `init.sh` fájlokat futtatva  mindenféle hiba nélkül el kell induljon!
@@ -53,7 +53,7 @@
 
 ## Feladatok (60 pont)
 
-A feladat, hogy [ezen kezdőcsomagból kiindulva](https://github.com/szerveroldali/laravel_kezdocsomag_2021-22-2) készíts egy űrlapkezelő rendszert, ami gyakorlatilag a Google Forms egyszerűsített változata. A felhasználók létre tudnak hozni űrlapokat különféle típusú kérdésekkel, majd a létrejött űrlap linkjét meg tudják osztani másokkal, akik kitölthetik az adott űrlapot. Az űrlap létrehozója később áttekintheti a kérdésekre adott válaszokat az űrlapkezelő felületen.
+A feladat, hogy [ezen kezdőcsomagból kiindulva](https://github.com/szerveroldali/laravel_kezdocsomag_2021-22-2/archive/refs/heads/main.zip) készíts egy űrlapkezelő rendszert, ami gyakorlatilag a Google Forms egyszerűsített változata. A felhasználók létre tudnak hozni űrlapokat különféle típusú kérdésekkel, majd a létrejött űrlap linkjét meg tudják osztani másokkal, akik kitölthetik az adott űrlapot. Az űrlap létrehozója később áttekintheti a kérdésekre adott válaszokat az űrlapkezelő felületen.
 
 :package: A beadandót a `php artisan zip` parancs segítségével be kell csomagolni, majd a létrejött zip fájlt a Canvas rendszerben be kell adni a kijelölt feladathoz a megadott határidőig! A határidő lejárta után a Canvas lezár, ezért onnantól nincs lehetőséged beadásra, ezért ügyelj arra, hogy ne hagyd az utolsó pillanatra a beadást! A legutoljára beadott megoldást fogjuk értékelni, és részpontokat is adunk!
 
