@@ -55,6 +55,7 @@
 ## További követelmények
 
 - Az űrlapokon keresztül küldött adatokat minden esetben validálni kell szerveroldalon! HTML szintű validáció (pl. required attribútum) ne is legyen a kódban! Nem a HTML tag-ek ismeretét szeretnénk számonkérni egy szerveroldali tárgyon, hanem a Laravel validációjának megfelelő alkalmazását!
+- Az űrlapok legyenek állapottartók, vagyis ha a validator visszadobja a szerver felé intézett kérést, akkor ne vesszenek el az addig bevitt adatok!
 - A tárgy követelményeivel összhangban a beadandón legalább a pontok 40%-át (24 pont) meg kell szerezni ahhoz, hogy a beadandó témaköre sikeres legyen!
 
 ## Feladatok (60 pont)
