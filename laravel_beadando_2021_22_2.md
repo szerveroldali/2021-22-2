@@ -24,10 +24,18 @@
 
 ## Minimum követelmények
 
-> :warning: **FONTOS! A beadandódnak az alább felsorolt ÖSSZES követelményt teljesítenie kell, különben a megoldást nem értékeljük!**
+```diff
+- FIGYELEM! A beadandódnak az alább felsorolt ÖSSZES követelményt teljesítenie kell, különben a megoldást nem értékeljük!
+```
 
 - **A beadandót a kijelölt határidőn belül be kell adni a Canvas felületen!**
-  > :warning: **FONTOS! A Canvas beadási felülete a határidő lejártakor automatikusan LEZÁR! Ez azt jelenti, hogy a határidő lejárta után NINCS lehetőség beadásra, már 0:00-tól sem! Haladékra csak kivételes és igazolt esetben van lehetőség a gyakorlatvezetőd egyéni elbírálásától függően! Ha valaki kicsúszik a határidőből, akkor nem teljesítette beadandót, ebből kifolyólag pedig a tárgyat sem, hiszen a beadandó a tárgy teljesítésének egyik alapkövetelménye!**
+  ```diff
+  - FIGYELEM! A Canvas beadási felülete a határidő lejártakor automatikusan LEZÁR!                            
+  - Ez azt jelenti, hogy a határidő lejárta után NINCS lehetőség beadásra, már 0:00-tól sem!                  
+  - Haladékra csak kivételes és igazolt esetben van lehetőség a gyakorlatvezetőd egyéni elbírálásától függően!
+  - Ha valaki kicsúszik a határidőből, akkor nem teljesítette beadandót, ebből kifolyólag pedig a tárgyat sem,
+  - hiszen a beadandó a tárgy teljesítésének egyik alapkövetelménye!                                          
+  ```
 - Kötelező a kezdőcsomag használata! A kezdőcsomag [INNEN](https://github.com/szerveroldali/laravel_kezdocsomag_2021-22-2/archive/refs/heads/main.zip) tölthető le.
 - Tilos további Composer-es csomagokat telepíteni a UI csomagokon kívül! A feladat kényelmesen megoldható azokkal az alap csomagokkal, amiket a kezdőcsomag is biztosít. NPM-es csomagok telepíthetők, frontend szabadon választható.
 - Az adattároláshoz SQLite adatbázist kell használni! A beadott alkalmazás SQLite kapcsolatra legyen beállítva (ez a kezdőcsomag alapértelmezett viselkedése)!
