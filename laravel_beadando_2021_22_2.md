@@ -169,8 +169,9 @@ Az űrlap linkjét megnyitva megjelenik a kitöltő felület.
 - Beküldéskor a validálásnál a következő szempontokra figyelj:
   - ki kell kényszeríteni, hogy a `required` kérdésekre a kitöltő mindenképpen válaszoljon,
   - kezelni kell azt az esetet is, hogy a feleletválasztós kérdésekre biztosan csak a megadott válaszlehetőségek valamelyikét lehessen megjelölni,
-  - ha csak egy válaszlehetőség van, akkor ott ne lehessen több választ megadni,
-  - ha az űrlap közben lejárt, akkor erről is tájékoztatni kell a kitöltőt!
+    - itt az a lényeg, hogy a szerver felé küldött kérés manipulálásával ne legyen megkerülhető a rendszer
+  - ha egy kérdésnél csak egy válaszlehetőséget lehet kiválasztani (`ONE_CHOICE`), akkor ott ne lehessen több választ megadni,
+  - ha az űrlap a kitöltés közben lejárt, akkor erről is tájékoztatni kell a kitöltőt!
 
 ## Hasznos hivatkozások
 
