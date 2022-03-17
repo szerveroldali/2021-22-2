@@ -13,7 +13,7 @@
       - [Adatmodellek](#adatmodellek)
       - [Relációk](#relációk)
     - [2. feladat: Seeder (4 pont)](#2-feladat-seeder-4-pont)
-    - [3. feladat: Űrlapkezelő (3 pont)](#3-feladat-űrlapkezelő-3-pont)
+    - [3. feladat: Űrlapkezelő főmenü (3 pont)](#3-feladat-űrlapkezelő-főmenü-3-pont)
     - [4. feladat: Új űrlap létrehozása (12 pont)](#4-feladat-új-űrlap-létrehozása-12-pont)
     - [5. feladat: Űrlapok kezelése](#5-feladat-űrlapok-kezelése)
       - [5/a: Űrlapkezelő (6 pont)](#5a-űrlapkezelő-6-pont)
@@ -119,7 +119,7 @@ Ha több válaszlehetőség van, akkor több `Answer` kell `choice_id`-val és n
   - *user3@szerveroldali.hu - password*
   - stb.
 
-### 3. feladat: Űrlapkezelő (3 pont)
+### 3. feladat: Űrlapkezelő főmenü (3 pont)
 
 Az alkalmazás gyökér útvonala (http://localhost:8000) irányítson át az űrlapkezelő felületre. A felületet csak bejelentkezett felhasználók használhatják, ezért ha vendég nyitja meg az oldalt, akkor a bejelentkező felületre kell átirányítani.
 
