@@ -9,17 +9,17 @@
   - [Minimum követelmények](#minimum-követelmények)
   - [További követelmények](#további-követelmények)
   - [Feladatok (60 pont)](#feladatok-60-pont)
-    - [1. feladat: Adatmodellek és relációk (X pont)](#1-feladat-adatmodellek-és-relációk-x-pont)
+    - [1. feladat: Adatmodellek és relációk (2 pont)](#1-feladat-adatmodellek-és-relációk-2-pont)
       - [Adatmodellek](#adatmodellek)
       - [Relációk](#relációk)
-    - [2. feladat: Seeder (X pont)](#2-feladat-seeder-x-pont)
-    - [3. feladat: Űrlapkezelő (X pont)](#3-feladat-űrlapkezelő-x-pont)
-    - [4. feladat: Új űrlap létrehozása (X pont)](#4-feladat-új-űrlap-létrehozása-x-pont)
+    - [2. feladat: Seeder (4 pont)](#2-feladat-seeder-4-pont)
+    - [3. feladat: Űrlapkezelő (3 pont)](#3-feladat-űrlapkezelő-3-pont)
+    - [4. feladat: Új űrlap létrehozása (12 pont)](#4-feladat-új-űrlap-létrehozása-12-pont)
     - [5. feladat: Űrlapok kezelése](#5-feladat-űrlapok-kezelése)
-      - [5/a: Űrlapkezelő (X pont)](#5a-űrlapkezelő-x-pont)
-      - [5/b: Űrlap módosítása (X pont)](#5b-űrlap-módosítása-x-pont)
-      - [5/c: Statisztika és válaszok megtekintése (X pont)](#5c-statisztika-és-válaszok-megtekintése-x-pont)
-    - [6. feladat: Űrlap kitöltése (X pont)](#6-feladat-űrlap-kitöltése-x-pont)
+      - [5/a: Űrlapkezelő (6 pont)](#5a-űrlapkezelő-6-pont)
+      - [5/b: Űrlap módosítása (9 pont)](#5b-űrlap-módosítása-9-pont)
+      - [5/c: Statisztika és válaszok megtekintése (12 pont)](#5c-statisztika-és-válaszok-megtekintése-12-pont)
+    - [6. feladat: Űrlap kitöltése (12 pont)](#6-feladat-űrlap-kitöltése-12-pont)
   - [Hasznos hivatkozások](#hasznos-hivatkozások)
 
 ## Minimum követelmények
@@ -65,7 +65,7 @@ A feladat, hogy [ezen kezdőcsomagból kiindulva](https://github.com/szerverolda
 
 :bulb: Ha a munkád közben bármilyen kérdésed adódik, fordulj bizalommal a gyakorlatvezetődhöz segítségért!
 
-### 1. feladat: Adatmodellek és relációk (X pont)
+### 1. feladat: Adatmodellek és relációk (2 pont)
 
 Hozd létre a következő adatmodelleket a kért mezőkkel! Egy mező csak akkor lehet nullable, ha ezt a feladat külön kéri! Az `id`, `created_at`, `updated_at` mezők is szükségesek, ezeket a Laravel magától kezeli. A modellek létrehozását követően add meg a köztük lévő relációkat is, mind a migration, mind pedig a model fájlokban!
 
@@ -108,7 +108,7 @@ Ha több válaszlehetőség van, akkor több `Answer` kell `choice_id`-val és n
 - `Question` 1-N `Choice`
 - `Question` 1-N `Answer`
 
-### 2. feladat: Seeder (X pont)
+### 2. feladat: Seeder (4 pont)
 
 - Az alkalmazás legyen feltölthető adatokkal seeder segítségével. Ha több különálló seeder van, akkor ezek legyenek egyesítve a `DatabaseSeeder.php`-ban [`call`](https://laravel.com/api/8.x/Illuminate/Database/Seeder.html#method_call)/[`callWith`](https://laravel.com/api/8.x/Illuminate/Database/Seeder.html#method_callWith) hívások segítségével!
 - A seedelés lehetőleg minél több esetet fedjen le, tehát mindenféle model, ami az alkalmazásban van, az kerüljön seedelésre, valamint a köztük lévő kapcsolatok (relációk) is legyenek létrehozva.
@@ -119,7 +119,7 @@ Ha több válaszlehetőség van, akkor több `Answer` kell `choice_id`-val és n
   - *user3@szerveroldali.hu - password*
   - stb.
 
-### 3. feladat: Űrlapkezelő (X pont)
+### 3. feladat: Űrlapkezelő (3 pont)
 
 Az alkalmazás gyökér útvonala (http://localhost:8000) irányítson át az űrlapkezelő felületre. A felületet csak bejelentkezett felhasználók használhatják, ezért ha vendég nyitja meg az oldalt, akkor a bejelentkező felületre kell átirányítani.
 
@@ -129,7 +129,7 @@ Az űrlapkezelő oldalon alapvetően két fő menüpontot kell biztosítani:
   - módosítás, 
   - kérdésekre adott válaszok megtekintése.
 
-### 4. feladat: Új űrlap létrehozása (X pont)
+### 4. feladat: Új űrlap létrehozása (12 pont)
 
 Készítsd el a felületet, ahol új űrlapot lehet felvenni! Az első részben az űrlap alapadatait kell megadni:
 - mi a címe,
@@ -143,7 +143,7 @@ Az űrlap létrehozását követően irányítsd át a felhasználót egy oldalr
 
 ### 5. feladat: Űrlapok kezelése
 
-#### 5/a: Űrlapkezelő (X pont)
+#### 5/a: Űrlapkezelő (6 pont)
 
 Készíts egy olyan oldalt, ahol a felhasználó számára listázod az általa létrehozott űrlapokat!
 - Az űrlapok az `updated_at` mező alapján időrendileg csökkenő sorrendben legyenek, vagyis a legfrissebb legyen legelöl! A listában jelenjen meg az űrlap címe, és a létrehozásának az ideje.
@@ -151,11 +151,11 @@ Készíts egy olyan oldalt, ahol a felhasználó számára listázod az általa 
 
 Az űrlapkezelő listájában egy űrlapra kattintva jöjjön be annak az adatlapja. Az adatlapot a következő két részfeladat taglalja.
 
-#### 5/b: Űrlap módosítása (X pont)
+#### 5/b: Űrlap módosítása (9 pont)
 
 Az adatlapon kínáld fel a felhasználónak a módosítás lehetőségét! A módosítás azt jelenti, hogy az űrlap adatai és a hozzá tartozó kérdések is módosíthatók, **DE** csak abban az esetben tegyük lehetővé a módosítást, ha még senki sem küldött be választ az űrlaphoz! Ha már érkeztek válaszok, akkor tudatni kell a felhasználóval, hogy emiatt már nem módosíthatja az űrlapot, hiszen az elrontaná az addigi kitöltéseket.
 
-#### 5/c: Statisztika és válaszok megtekintése (X pont)
+#### 5/c: Statisztika és válaszok megtekintése (12 pont)
 
 Az űrlap adatlapján a módosításon túl meg kell jeleníteni a hozzá tartozó kérdéseket is, valamint az ezekre adott válaszokat. Ha egy kérdéshez még nincsenek válaszok, abban az esetben erről is tájékoztasd a felhasználót!
 
@@ -165,7 +165,7 @@ A kérdésekhez tartozó válaszokat a következő módon kell megjeleníteni:
 
 > Megjegyzés: tegyük fel, hogy nem lesz sok szöveges válasz, így ha az összes választ kilistázod a kérdés alá, az nem probléma.
 
-### 6. feladat: Űrlap kitöltése (X pont)
+### 6. feladat: Űrlap kitöltése (12 pont)
 
 Az űrlap linkjét megnyitva megjelenik a kitöltő felület. 
 - Ha a megadott űrlap nem létezik, 404-es hibakódot kell adni.
