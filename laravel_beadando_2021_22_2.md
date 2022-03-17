@@ -7,6 +7,7 @@
 - [Szerveroldali webprogramozás 2021/22/2 - Laravel beadandó](#szerveroldali-webprogramozás-2021222---laravel-beadandó)
   - [Tartalomjegyzék](#tartalomjegyzék)
   - [Minimum követelmények](#minimum-követelmények)
+  - [További követelmények](#további-követelmények)
   - [Feladatok (60 pont)](#feladatok-60-pont)
     - [1. feladat: Adatmodellek és relációk (X pont)](#1-feladat-adatmodellek-és-relációk-x-pont)
       - [Adatmodellek](#adatmodellek)
@@ -50,6 +51,11 @@
   ```
 - Tilos beadni a **vendor** és/vagy a **node_modules** mappát!
 - A felhasználói felületet legalább annyira ki kell dolgozni, hogy a funkciók a frontend-en keresztül is elérhetőek legyenek és beadandó böngészőből is tesztelhető legyen a kódban való kutatás nélkül! Tipikusan pl.: legyen navbar, működjenek a linkek, gombok, stb! A frontendhez használt technológia nincs megkötve, tehát használhatsz Bootstrap-et, Tailwind-et, stb!
+
+## További követelmények
+
+- Az űrlapokon keresztül küldött adatokat minden esetben validálni kell szerveroldalon! HTML szintű validáció (pl. required attribútum) ne is legyen a kódban! Nem a HTML tag-ek ismeretét szeretnénk számonkérni egy szerveroldali tárgyon, hanem a Laravel validációjának megfelelő alkalmazását!
+- A tárgy követelményeivel összhangban a beadandón legalább a pontok 40%-át (24 pont) meg kell szerezni ahhoz, hogy a beadandó témaköre sikeres legyen!
 
 ## Feladatok (60 pont)
 
