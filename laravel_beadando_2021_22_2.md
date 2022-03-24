@@ -93,7 +93,7 @@ Hozd létre a következő adatmodelleket a kért mezőkkel! Egy mező csak akkor
   - `form_id` (integer, foreign key, references to `id` on `forms` table) (űrlap azonosítója, amihez a kérdés tartozik)
   - `question` (string: 255) (kérdés szövege)
   - `answer_type` (enum: `TEXTAREA`, `ONE_CHOICE`, `MULTIPLE_CHOICES`) (válasz típusa: szöveges, egy válaszlehetőség, több válaszlehetőség)
-  - `required` (boolean, default: true) (kötelező-e az adott kérdést megválaszolni az űrlap kitöltésekor)
+  - `required` (boolean, default: true) (kötelező-e az adott kérdést megválaszolni az űrlap kitöltésekor, `MULTIPLE_CHOICES` esetén ilyenkor legalább 1 válaszlehetőséget be kell jelölni)
   - `created_at`, `updated_at`
 - `Choice` (válaszlehetőségek, ha a kérdés feleletválasztós)
   - `id`
@@ -108,7 +108,7 @@ Hozd létre a következő adatmodelleket a kért mezőkkel! Egy mező csak akkor
   - `answer` (text) (a válasz szövege, ha `TEXTAREA` típusú a kérdés)
   - `created_at`, `updated_at`
 
-Ha több válaszlehetőség van, akkor több `Answer` kell `choice_id`-val és null-os answerrel.
+Ha a kérdés `MULTIPLE_CHOICES` típusú, és a kitöltő több válaszlehetőséget is bejelölt, akkor több `Answer` rekordot kell létrehozni a megfelelő `choice_id` értékekkel és `null`-os answer mezővel (mivel feleletválasztós kérdés, ezért a szöveges választ jelölő `answer` mező irreleváns, tehát maradhat `null`).
 
 #### Relációk
 
