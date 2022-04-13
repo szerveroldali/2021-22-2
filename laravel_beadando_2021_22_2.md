@@ -37,7 +37,7 @@
   - hiszen a beadandó a tárgy teljesítésének egyik alapkövetelménye!                                          
   ```
 - Kötelező a kezdőcsomag használata! A kezdőcsomag [INNEN](https://github.com/szerveroldali/laravel_kezdocsomag_2021-22-2/archive/refs/heads/main.zip) tölthető le.
-- Tilos további Composer-es csomagokat telepíteni a UI csomagokon kívül! A feladat kényelmesen megoldható azokkal az alap csomagokkal, amiket a kezdőcsomag is biztosít. NPM-es csomagok telepíthetők, frontend szabadon választható.
+- Tilos további Composer-es csomagokat telepíteni a UI csomagokon kívül (Breeze, UI)! A feladat kényelmesen megoldható azokkal az alap csomagokkal, amiket a kezdőcsomag is biztosít. NPM-es csomagok telepíthetők, frontend szabadon választható.
 - Az adattároláshoz SQLite adatbázist kell használni! A beadott alkalmazás SQLite kapcsolatra legyen beállítva (ez a kezdőcsomag alapértelmezett viselkedése)!
 - Az alkalmazás a beadott zip-ből kicsomagolva az operációs rendszernek megfelelő `init.bat` / `init.sh` fájlokat futtatva  mindenféle hiba nélkül el kell induljon!
   - Ezek a fájlok a beadandó inicializációs parancsait tartalmazzák. Az `init.bat`-ot Windows-on, az `init.sh`-t pedig Linux-on vagy macOS-en kell használni. 
@@ -116,6 +116,8 @@ Ha a kérdés `MULTIPLE_CHOICES` típusú, és a kitöltő több válaszlehetős
 - `Form` 1-N `Question`
 - `Question` 1-N `Choice`
 - `Question` 1-N `Answer`
+- `User` 1-N `Answer`
+- `Choice` 1-N `Answer`
 
 ### 2. feladat: Seeder (4 pont)
 
