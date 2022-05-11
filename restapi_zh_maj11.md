@@ -332,7 +332,7 @@ A fent látható módon tehát tudod kezelni az `UnauthorizedError`-t, vagy a `V
 
 Új lejátszási lista létrehozása a bejelentkezett felhasználóhoz. **A végpont hitelesített**.
 
-- Minta kérés: `PUT http://localhost:4000/posts/2`
+- Minta kérés: `POST http://localhost:4000/my-playlists`
   ```json
   {
     "title": "Playlist3",
