@@ -532,7 +532,7 @@ let db = {
 A feladatot a kezdőcsomagon belül a `websocket/events.js` fájlba kell kidolgozni.
 
 ### 1. feladat: `new-game` (2 pont)
-  - Új játék tárolása az adatbázisban, ha éppen nem fut játék (vagyis ha a `db.games` üres objektum). A tárolás a feladat elején adott minta szerint történjen:
+  - Új játék tárolása az adatbázisban, ha éppen nem fut játék (vagyis ha a `db.game` üres objektum). A tárolás a feladat elején adott minta szerint történjen:
     ```js
     db.game = {
       numbers: [ /*Már a játék indításakor kihúzunk 5 db egyedi számot az [1,15] intervallumból. */ ],
@@ -543,7 +543,7 @@ A feladatot a kezdőcsomagon belül a `websocket/events.js` fájlba kell kidolgo
     - `password`: a titkos admin jelszó, ami elindítja a játékot. Ez szerveroldalon fixen `2444666668888888` legyen *(kimondva 12345678 azaz egy 2, három 4, öt 6, hét 8)*
   - Válasz (acknowledgement):
     - Nem megadott / hibás jelszó esetén: `{ status: 'error', message: 'Invalid password'}`
-    - Ha van már folyamatban lévő játék (a `db.games` nem üres objektum): `{ status: 'error', message: 'Game is already in progress'}`
+    - Ha van már folyamatban lévő játék (a `db.game` nem üres objektum): `{ status: 'error', message: 'Game is already in progress'}`
     - Optimális esetben: `{ status: 'ok' }`
 
 ### 2. feladat: `tip` (3 pont)
@@ -554,7 +554,7 @@ A feladatot a kezdőcsomagon belül a `websocket/events.js` fájlba kell kidolgo
   - Paraméterek
     - `numbers`: a tippelt számok, ami egy 5 elemű, az [1,15] intervallumba eső egyedi számokat tartalmazó tömb
   - Válasz (acknowledgement):
-    - Ha nincs folyamatban játék (a `db.games` üres objektum): `{ status: 'error', message: 'No game in progress'}`
+    - Ha nincs folyamatban játék (a `db.game` üres objektum): `{ status: 'error', message: 'No game in progress'}`
     - Ha a `numbers` nem tömb: `{ status: 'error', message: 'Not an array'}`
     - Ha a `numbers` hossza nem 5: `{ status: 'error', message: 'Invalid length'}`
     - Ha valamelyik elem invalid: `{ status: 'error', message: 'X is invalid'}`
