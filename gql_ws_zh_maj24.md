@@ -516,7 +516,7 @@ let db = {
       numbers: [1,2,3,4,5],
       // A kliensek által megtett tippek (objektumok tömbje):
       tips: [
-        { socket: "socket1": numbers: [3,4,5,6,7] }
+        { socket: "socket1", numbers: [3,4,5,6,7] }
       ]
     }
 };
