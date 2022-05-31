@@ -130,6 +130,7 @@ A fenti modellek közötti relációk pedig a következőképpen alakulnak:
 
 - `User` N-N `Article`: Egy újságíró akármennyi cikk szerzője lehet, és egy cikknek is akármennyi újságíró lehet a szerzője
 - `User` 1-N `Comment`: Egy felhasználónak akármennyi hozzászólása lehet
+- `Article` 1-N `Comment`: Egy cikknek akármennyi hozzászólása lehet
 
 Segítség a relációkkal kapcsolatos műveletekhez:
 
