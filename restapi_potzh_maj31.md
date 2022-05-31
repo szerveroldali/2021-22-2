@@ -112,7 +112,7 @@ A modellek az alábbiak:
 - `Article`: cikk
   - `id`: integer, auto increment, primary key
   - `title`: string (a cikk címe)
-  - `text`: text (a cikk tartalma)
+  - `text`: text, min length: 128 character (a cikk tartalma)
   - `premiumRequired`: boolean, default: `false` (előfizetéshez, azaz prémium tagsághoz kötött-e a cikk)
   - `freeOnFirstDay`: boolean, default: `false` (ha a cikk prémium tagsághoz kötött, első nap ingyenesen elolvasható-e)
   - `commentsEnabled`: boolean, default: `true` (lehetőség van-e hozzászólást írni a cikkhez)
@@ -134,7 +134,7 @@ A fenti modellek közötti relációk pedig a következőképpen alakulnak:
 Segítség a relációkkal kapcsolatos műveletekhez:
 
 <details>
-<summary>**Relációkhoz tartozó metódusok megjelenítése**</summary>
+<summary>Relációkhoz tartozó metódusok megjelenítése</summary>
 
 - `User`:
   - Cikkek:
@@ -278,7 +278,7 @@ Lekér egy cikket a megadott ID alapján.
 - A cikk alapadataihoz (mezőihez) hozzá kell venni a cikk szerzőit és a cikkhez írt hozzászólásokat is a minta válaszban lévő `Authors` és `Comments` rész alapján.
   - Az `Authors`-ban lévő felhasználóknak **csak** az `id`, `email` és `name` mezőit add meg!
   - A `Comments`-ben lévő hozzászólásoknak **csak** az `id`, `text` és `UserId` mezőit add meg!
-- Továbbá kezelni kell az előfizetéshez kötött cikkekkel járó korlátozásokat is. Ez azt jelenti, hogyha egy cikk nem tekinthető meg ingyenesen (lásd az előző feladatban a `free_now` részt), akkor a vendégeknek / nem prémium szintű felhasználóknak nem jelenik meg a cikk teljes tartalma, csak az első 96 karakter és három pont, a következő minta szerint: `<text mező első 96 karaktere>...`.
+- Továbbá kezelni kell az előfizetéshez kötött cikkekkel járó korlátozásokat is. Ez azt jelenti, hogyha egy cikk nem tekinthető meg ingyenesen (lásd az előző feladatban a `free_now` részt), akkor a vendégeknek / nem prémium szintű felhasználóknak nem jelenik meg a cikk teljes tartalma, csak az első 96 karakter és három pont, a következő minta szerint: `<text mező első 96 karaktere>...`. Mivel a `text`-re egy legalább 128 karakter hosszúságot megkövetelő validátor van beállítva, ezért nem kell foglalkozni azzal az esettel, hogy mi van akkor, ha 96 karakternél rövidebb.
   - Értelemszerűen ebből az is következik, hogy ehhez a végponthoz szükséges egy opcionális hitelesítés.
   - Ha a hitelesített felhasználó újságíró (`isJournalist`), akkor bármilyen cikket megtekinthet prémium tagságtól függetlenül.
 - Minta kérés: `POST http://localhost:4000/articles/3`
