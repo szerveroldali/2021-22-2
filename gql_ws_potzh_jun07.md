@@ -517,8 +517,13 @@ let db = {
     room1: {
       admin: "socket1",
       members: ["socket1", "socket2", "socket3"],
+      bans: [
+        {
+          socketId: "socket4",
+          reason: "No reason",
+        },
+      ],
       muted: ["socket2"],
-      bans: ["socket5"],
       messages: [
         { timestamp: 123456789, client: "socket1", message: "sziasztok" },
         { timestamp: 123456789, client: "socket3", message: "hali" },
@@ -527,8 +532,8 @@ let db = {
     "Másik szoba": {
       admin: "socket2",
       members: ["socket2"],
-      muted: [],
       bans: [],
+      muted: [],
       messages: [
         { timestamp: 123456789, client: "socket2", message: "foreveralone" },
       ],
